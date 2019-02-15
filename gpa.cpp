@@ -13,9 +13,9 @@ int main(int argc, char* argv[])
   double courseGrades[5];
   string courseLetterGrades[5];
   int numCourses = int(argc / 2);
-  if(argc / 2 == 0){
+  if(argc % 2 == 0){
 	cout << "Usage: ./gpa course letterGrade"<< endl;
-  	return 0;
+  	return 1;
   }
 
   for (int i = 1; i<= numCourses * 2; i=i+2 ){
