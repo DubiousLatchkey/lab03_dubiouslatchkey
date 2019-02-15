@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
   int numCourses = int(argc / 2);
   if(argc % 2 == 0){
 	cout << "Usage: ./gpa course letterGrade";
-  	return 1;
+  	return 0;
   }
 
   for (int i = 1; i<= numCourses * 2; i=i+2 ){
