@@ -14,6 +14,7 @@ int main(int argc, char* argv[])
   string courseLetterGrades[5];
   int numCourses = int(argc / 2);
   if(argc / 2 == 0){
+	cout << "Usage: ./gpa course letterGrade"<< endl;
   	return 1;
   }
 
